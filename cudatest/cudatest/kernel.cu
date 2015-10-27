@@ -7,7 +7,7 @@
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __global__ void cube(float * d_out, float * d_in){
-	// Todo: Fill in this function
+
 	int idx = threadIdx.x;
 	d_out[idx] = d_in[idx] * d_in[idx] * d_in[idx];
 }
